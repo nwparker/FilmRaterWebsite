@@ -38,9 +38,9 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li id="home_tab" class="active"><a href="#home">Home</a></li>
+            <li id="about_tab"><a href="#about">About</a></li>
+            <li id="contact_tab"><a href="#contact">Contact</a></li>
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
@@ -48,9 +48,11 @@
 
     <div class="container">
 
-      <div class="row row-offcanvas row-offcanvas-right">
-
-        <div class="col-xs-4 col-sm-2" id="sidebar" role="complementary">
+      <!--  -->
+      <!-- Home Page -->
+      <!--  -->
+      <div id="home_page" class="page row row-offcanvas row-offcanvas-right page">
+        <div class="sidebar col-xs-4 col-sm-2" role="complementary">
           <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
             <ul class="nav bs-docs-sidenav">
               <li>
@@ -65,7 +67,7 @@
             </ul>
         </div><!--/.sidebar-offcanvas-->
 
-        <div class="col-xs-14 col-sm-10">
+        <div class="main col-xs-14 col-sm-10">
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
           </p>
@@ -116,14 +118,157 @@
             </form>
           </div>
         </div><!--/.col-xs-12.col-sm-9-->
+      </div><!--/row-->
 
 
+      <!--  -->
+      <!-- About Page -->
+      <!--  -->
+      <div id="about_page" class="page row row-offcanvas row-offcanvas-right page">
+        <div class="sidebar col-xs-4 col-sm-2" role="complementary">
+          <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+            <ul class="nav bs-docs-sidenav">
+              <li>
+                <a href="#overview">Summary</a>
+              </li>
+              <li>
+                <a href="#overview">Predict a Movie</a>
+              </li>
+              <li>
+                <a href="#overview">Additional</a>
+              </li>
+            </ul>
+        </div><!--/.sidebar-offcanvas-->
+
+        <div class="main col-xs-14 col-sm-10">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron">
+            <h1>About</h1>
+            <h2>About the Predictor</h2>
+            <p>The Film Rating Predictor on this page can predict the IMDB rating of a movie given a set of attributes. This is done using a combination of machine learning techniques using regression. More info can be found on the <a href="#about">About page</a>
+            <h2>About the Team</h2>
+            <p>Simply fill in the attributes below and select predict to predict a movie</p>
+            <form class="form-group" action="">
+              <table id="attr_table" class="table table-striped">
+              <tr>
+                <td>
+                  Language:
+                </td>
+                <td>
+                  <select class="form-control" name="Movie Language" id="lang">
+                    <option value="English">English</option>
+                    <option value="Spanish">Spanish</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Genre:
+                </td>
+                <td>
+                  <select class="form-control" name="Movie Genere" id="genre">
+                    <option value="Horror">Horror</option>
+                    <option value="Drama">Drama</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Genre:
+                </td>
+                <td>
+                  <select class="form-control" name="Movie Genere" id="genre">
+                    <option value="Horror">Horror</option>
+                    <option value="Drama">Drama</option>
+                  </select>
+                </td>
+              </tr>
+
+              </table>
+
+            </form>
+          </div>
+        </div><!--/.col-xs-12.col-sm-9-->
+      </div><!--/row-->
+
+      <!--  -->
+      <!-- Contact Page -->
+      <!--  -->
+      <div id="contact_page" class="page row row-offcanvas row-offcanvas-right page">
+        <div class="sidebar col-xs-4 col-sm-2" role="complementary">
+          <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+            <ul class="nav bs-docs-sidenav">
+              <li>
+                <a href="#overview">Summary</a>
+              </li>
+              <li>
+                <a href="#overview">Predict a Movie</a>
+              </li>
+              <li>
+                <a href="#overview">Additional</a>
+              </li>
+            </ul>
+        </div><!--/.sidebar-offcanvas-->
+
+        <div class="main col-xs-14 col-sm-10">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron">
+            <h1>Contact</h1>
+            <h2>Contact us</h2>
+            <p>The Film Rating Predictor on this page can predict the IMDB rating of a movie given a set of attributes. This is done using a combination of machine learning techniques using regression. More info can be found on the <a href="#about">About page</a>
+            <h2>Predict a Movie</h2>
+            <p>Simply fill in the attributes below and select predict to predict a movie</p>
+            <form class="form-group" action="">
+              <table id="attr_table" class="table table-striped">
+              <tr>
+                <td>
+                  Language:
+                </td>
+                <td>
+                  <select class="form-control" name="Movie Language" id="lang">
+                    <option value="English">English</option>
+                    <option value="Spanish">Spanish</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Genre:
+                </td>
+                <td>
+                  <select class="form-control" name="Movie Genere" id="genre">
+                    <option value="Horror">Horror</option>
+                    <option value="Drama">Drama</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Genre:
+                </td>
+                <td>
+                  <select class="form-control" name="Movie Genere" id="genre">
+                    <option value="Horror">Horror</option>
+                    <option value="Drama">Drama</option>
+                  </select>
+                </td>
+              </tr>
+
+              </table>
+
+            </form>
+          </div>
+        </div><!--/.col-xs-12.col-sm-9-->
       </div><!--/row-->
 
       <hr>
 
       <footer>
-        <p>&copy; Company 2014</p>
+        <p>&copy; Film Rater Team - 2015</p>
       </footer>
 
     </div><!--/.container-->
@@ -135,10 +280,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    -->
-
     <script src="js/page.js"></script>
+    <script src="js/tabs.js"></script>
   </body>
 </html>

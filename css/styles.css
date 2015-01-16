@@ -32,6 +32,10 @@ h2 {
   color: red !important;
 }
 
+#navbar a {
+   outline: 0;
+}
+
 /*
  * Off Canvas
  * --------------------------------------------------

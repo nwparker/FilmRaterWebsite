@@ -15,4 +15,4 @@ $(document ).ready(function() {
     $(window).on('hashchange',function(){
         tab_func();
     });
-});
+}); 
